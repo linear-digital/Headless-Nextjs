@@ -1,0 +1,377 @@
+{
+      id
+      slug
+      previousSlugs
+      title
+      subtitle
+      author {
+        id
+        username
+        name
+        bio {
+          ...ContentFragment
+        }
+        bioV2 {
+          ...ContentFragment
+        }
+        profilePicture
+        socialMediaLinks {
+          ...SocialMediaLinksFragment
+        }
+        badges {
+          ...BadgeFragment
+        }
+        publications {
+          ...UserPublicationsConnectionFragment
+        }
+        posts {
+          ...UserPostConnectionFragment
+        }
+        followersCount
+        followingsCount
+        tagline
+        dateJoined
+        location
+        availableFor
+        tagsFollowing {
+          ...TagFragment
+        }
+        ambassador
+        deactivated
+        following
+        followsBack
+        followers {
+          ...UserConnectionFragment
+        }
+        follows {
+          ...UserConnectionFragment
+        }
+        techStack {
+          ...UserTagsConnectionFragment
+        }
+      }
+      coAuthors {
+        id
+        username
+        name
+        bio {
+          ...ContentFragment
+        }
+        bioV2 {
+          ...ContentFragment
+        }
+        profilePicture
+        socialMediaLinks {
+          ...SocialMediaLinksFragment
+        }
+        badges {
+          ...BadgeFragment
+        }
+        publications {
+          ...UserPublicationsConnectionFragment
+        }
+        posts {
+          ...UserPostConnectionFragment
+        }
+        followersCount
+        followingsCount
+        tagline
+        dateJoined
+        location
+        availableFor
+        tagsFollowing {
+          ...TagFragment
+        }
+        ambassador
+        deactivated
+        following
+        followsBack
+        followers {
+          ...UserConnectionFragment
+        }
+        follows {
+          ...UserConnectionFragment
+        }
+        techStack {
+          ...UserTagsConnectionFragment
+        }
+      }
+      tags {
+        id
+        name
+        slug
+        logo
+        tagline
+        info {
+          ...ContentFragment
+        }
+        followersCount
+        postsCount
+        posts {
+          ...FeedPostConnectionFragment
+        }
+      }
+      url
+      canonicalUrl
+      publication {
+        id
+        title
+        displayTitle
+        descriptionSEO
+        about {
+          ...ContentFragment
+        }
+        url
+        canonicalURL
+        author {
+          ...UserFragment
+        }
+        favicon
+        headerColor
+        metaTags
+        integrations {
+          ...PublicationIntegrationsFragment
+        }
+        invites {
+          ...PublicationInviteFragment
+        }
+        preferences {
+          ...PreferencesFragment
+        }
+        followersCount
+        imprint
+        imprintV2 {
+          ...ContentFragment
+        }
+        isTeam
+        links {
+          ...PublicationLinksFragment
+        }
+        domainInfo {
+          ...DomainInfoFragment
+        }
+        isHeadless
+        series {
+          ...SeriesFragment
+        }
+        seriesList {
+          ...SeriesConnectionFragment
+        }
+        posts {
+          ...PublicationPostConnectionFragment
+        }
+        postsViaPage {
+          ...PublicationPostPageConnectionFragment
+        }
+        pinnedPost {
+          ...PostFragment
+        }
+        post {
+          ...PostFragment
+        }
+        redirectedPost {
+          ...PostFragment
+        }
+        ogMetaData {
+          ...OpenGraphMetaDataFragment
+        }
+        features {
+          ...PublicationFeaturesFragment
+        }
+        drafts {
+          ...DraftConnectionFragment
+        }
+        allDrafts {
+          ...DraftConnectionFragment
+        }
+        scheduledDrafts {
+          ...DraftConnectionFragment
+        }
+        allScheduledDrafts {
+          ...DraftConnectionFragment
+        }
+        staticPage {
+          ...StaticPageFragment
+        }
+        staticPages {
+          ...StaticPageConnectionFragment
+        }
+        submittedDrafts {
+          ...DraftConnectionFragment
+        }
+        isGitHubBackupEnabled
+        isGithubAsSourceConnected
+        urlPattern
+        emailImport {
+          ...EmailImportFragment
+        }
+        redirectionRules {
+          ...RedirectionRuleFragment
+        }
+        hasBadges
+        sponsorship {
+          ...PublicationSponsorshipFragment
+        }
+        recommendedPublications {
+          ...UserRecommendedPublicationEdgeFragment
+        }
+        totalRecommendedPublications
+        recommendingPublications {
+          ...PublicationUserRecommendingPublicationConnectionFragment
+        }
+        allowContributorEdits
+        members {
+          ...PublicationMemberConnectionFragment
+        }
+        publicMembers {
+          ...PublicationMemberConnectionFragment
+        }
+      }
+      cuid
+      coverImage {
+        url
+        isPortrait
+        attribution
+        photographer
+        isAttributionHidden
+      }
+      bannerImage {
+        url
+      }
+      brief
+      readTimeInMinutes
+      views
+      series {
+        id
+        name
+        createdAt
+        description {
+          ...ContentFragment
+        }
+        coverImage
+        author {
+          ...UserFragment
+        }
+        cuid
+        slug
+        sortOrder
+        posts {
+          ...SeriesPostConnectionFragment
+        }
+      }
+      reactionCount
+      replyCount
+      responseCount
+      featured
+      contributors {
+        id
+        username
+        name
+        bio {
+          ...ContentFragment
+        }
+        bioV2 {
+          ...ContentFragment
+        }
+        profilePicture
+        socialMediaLinks {
+          ...SocialMediaLinksFragment
+        }
+        badges {
+          ...BadgeFragment
+        }
+        publications {
+          ...UserPublicationsConnectionFragment
+        }
+        posts {
+          ...UserPostConnectionFragment
+        }
+        followersCount
+        followingsCount
+        tagline
+        dateJoined
+        location
+        availableFor
+        tagsFollowing {
+          ...TagFragment
+        }
+        ambassador
+        deactivated
+        following
+        followsBack
+        followers {
+          ...UserConnectionFragment
+        }
+        follows {
+          ...UserConnectionFragment
+        }
+        techStack {
+          ...UserTagsConnectionFragment
+        }
+      }
+      commenters {
+        edges {
+          ...PostCommenterEdgeFragment
+        }
+        pageInfo {
+          ...PageInfoFragment
+        }
+        totalDocuments
+      }
+      comments {
+        edges {
+          ...PostCommentEdgeFragment
+        }
+        pageInfo {
+          ...PageInfoFragment
+        }
+        totalDocuments
+      }
+      bookmarked
+      content {
+        markdown
+        html
+        text
+      }
+      likedBy {
+        edges {
+          ...PostLikerEdgeFragment
+        }
+        pageInfo {
+          ...PageInfoFragment
+        }
+        totalDocuments
+      }
+      featuredAt
+      publishedAt
+      updatedAt
+      preferences {
+        pinnedToBlog
+        disableComments
+        stickCoverToBottom
+        isDelisted
+      }
+      audioUrls {
+        male
+        female
+      }
+      seo {
+        title
+        description
+      }
+      ogMetaData {
+        image
+      }
+      hasLatexInPost
+      isFollowed
+      isAutoPublishedFromRSS
+      features {
+        tableOfContents {
+          ...TableOfContentsFeatureFragment
+        }
+        badges {
+          ...PostBadgesFeatureFragment
+        }
+      }
+      sourcedFromGithub
+    }
