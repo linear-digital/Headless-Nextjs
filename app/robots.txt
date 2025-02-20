@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Google adsbot ignores robots.txt unless specifically named!
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+Sitemap: https://genzit.xyz/sitemap.xml
