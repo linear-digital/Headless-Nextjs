@@ -9,14 +9,19 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Logo from "./Logo";
 
-
-
-const categories = [
-  "Technology",
-  "Design",
-  "Development",
-  "Business",
-  "Lifestyle",
+const links = [
+  {
+    title: "All Blogs",
+    href: "/blogs",
+  },
+  {
+    title: "Categories",
+    href: "/categories",
+  },
+  {
+    title: "About",
+    href: "/about",
+  },
 ];
 
 export default function Header() {
@@ -35,10 +40,12 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <div className="relative">
-              <Link href={`/category/${"all".toLowerCase()}`}>
-                All Articles
-              </Link>
+            <div className="relative flex items-center gap-x-3">
+              {links.map((link) => (
+                <Link href={link.href} key={link.title}>
+                  {link.title}
+                </Link>
+              ))}
             </div>
 
             <div className="relative w-64">
@@ -85,14 +92,13 @@ export default function Header() {
               />
 
               <div className="space-y-2">
-                {categories.map((category) => (
+                {links.map((link) => (
                   <Link
-                    key={category}
-                    href={`/category/${category.toLowerCase()}`}
                     className="block px-4 py-2 hover:bg-accent rounded-md"
-                    onClick={() => setIsMenuOpen(false)}
+                    href={link.href}
+                    key={link.title}
                   >
-                    {category}
+                    {link.title}
                   </Link>
                 ))}
               </div>
