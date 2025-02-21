@@ -6,6 +6,7 @@ export interface Post {
      brief: string;
      coverImage: {
          url: string;
+         isPortrait: boolean;
      };
      tags: {
          id: string;

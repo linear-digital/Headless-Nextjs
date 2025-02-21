@@ -104,6 +104,7 @@ export async function getPostBySlug(slug: string) {
             canonicalUrl
             series { id name }
             views
+            readTimeInMinutes
             seo { title description }
           }
         }
