@@ -12,7 +12,7 @@ export const generateMetadata = async ({
 }: {
   params: { slug: string };
 }) => {
-  const { slug } = params;
+  const { slug } = await params;
 
   try {
     const post: Post = await getPostBySlug(slug);
